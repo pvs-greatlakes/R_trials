@@ -1,0 +1,51 @@
+---
+title: "New_RMarkdown using flextable formatting"
+author: "PVS"
+date: "21/12/2020"
+output:
+  word_document: default
+  rmarkdown::html_document: default
+  html_document:
+    df_print: paged
+---
+
+### Writing nicely formatted documents in Word from R
+
+###### Ref: https://davidgohel.github.io/flextable/articles/overview.html
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+###
+### Create reporting table from data frame
+###
+
+## flextable function default values to format the table
+
+
+
+###
+
+
+```{r cars, echo = FALSE}
+
+###
+### Create reporting table from data frame
+###
+
+## flextable function default values to format the table
+
+library(flextable)
+library(officer)
+
+myft <- flextable(
+      head(mtcars),
+      col_keys = c("am", "carb", "gear", "mpg", "draft"))
+
+myft
+
+###
+
+
+```
+
